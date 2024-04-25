@@ -1,0 +1,3 @@
+/home/u/CLionProjects/bread/cmake-build-debug/CMakeFiles/n.dir
+/home/u/CLionProjects/bread/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/u/CLionProjects/bread/cmake-build-debug/CMakeFiles/rebuild_cache.dir

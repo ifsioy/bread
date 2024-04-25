@@ -1,0 +1,16 @@
+alpha 0.001
+packetSize 1
+errorDerivativeType 2
+dropoutUsage 0
+layers 2
+1 1 
+activateType 2
+0 0 
+dropoutPercentOfZeros 2
+0 0 
+b 
+
+0.000000000000000000000000000000 
+weights 
+-0.008440217934548854827880859375 
+

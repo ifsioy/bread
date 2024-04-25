@@ -1,0 +1,7 @@
+# ninja log v5
+725	772	1713888865795111451	n	3bb7eab3679a7614
+1	725	1713888865751110030	CMakeFiles/n.dir/Network/Network.cpp.o	89f0c0f98a1e4d1c
+1	12	1714079645360493744	build.ninja	c2610e9ccf379fb9
+1	509	1713819862372619127	CMakeFiles/n.dir/Network/matrixMath/matrixMath.cpp.o	b5fb641fd211fd81
+1	697	1713887384219686684	CMakeFiles/n.dir/user_Interface/Menu.cpp.o	32262d0dc029f53b
+1	516	1713888865543103315	CMakeFiles/n.dir/main.cpp.o	d57d47fe46929cb1
