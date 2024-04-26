@@ -15,6 +15,8 @@ const int TYPE = 1;
 
 bool equal(float x, float y);
 
+bool consistsOfZeros(std::vector<float> &a, int numOfZeros = 2);
+
 void create(int n, std::vector<float> &a);
 
 void create(int n, int m, std::vector<std::vector<float> > &a);
@@ -28,8 +30,6 @@ void zero(std::vector<std::vector<std::vector<float> > > &a);
 void fastZero(std::vector<std::vector<std::vector<float> > > &a, std::vector<std::vector<float> > &b, std::vector<std::vector<float> > &c);
 
 void zeroFrom(int n, std::vector<std::vector<float> > &a);
-
-bool consistsOfZeros(std::vector<float> &a, int numOfZeros = 2);
 
 void randTo(std::vector<int> &a, int max);
 

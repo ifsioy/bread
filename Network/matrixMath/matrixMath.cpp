@@ -12,6 +12,25 @@ bool equal(float x, float y)
     return std::fabs(x - y) < minimal;
 }
 
+bool consistsOfZeros(std::vector<float> &a, int numOfZeros)
+{
+    if (equal(a[0], 0))
+        return true;
+    else
+        return false;
+    //TODO Кастыль, переделать
+    bool g = true;
+    int sz = std::min((int)a.size(), numOfZeros);
+    for (int i = 0; i < sz; i++)
+        if (!equal(a[i], 0))
+        {
+            g = false;
+            break;
+        }
+
+    return g;
+}
+
 void create(int n, std::vector<float> &a)
 {
     a = std::vector<float> (n, 0);
@@ -74,25 +93,6 @@ void zeroFrom(int n, std::vector<std::vector<float> > &a)
     for (int i = n; i < a.size(); i++)
         for (auto &o : a[i])
             o = 0;
-}
-
-bool consistsOfZeros(std::vector<float> &a, int numOfZeros)
-{
-    if (equal(a[0], 0))
-        return true;
-    else
-        return false;
-    //TODO Кастыль, переделать
-    bool g = true;
-    int sz = std::min((int)a.size(), numOfZeros);
-    for (int i = 0; i < sz; i++)
-        if (!equal(a[i], 0))
-        {
-            g = false;
-            break;
-        }
-
-    return g;
 }
 
 void randTo(std::vector<int> &a, int percentOfZeros)
@@ -440,7 +440,7 @@ void minusMult(std::vector<std::vector<std::vector<float> > > &a, std::vector<st
     for (int i = 0; i < a.size(); i++)
         for (int j = 0; j < a[i].size(); j++)
         {
-            if (consistsOfZeros(a[i][j]))
+            if (consistsOfZeros(b[i][j]))
                 continue;
 
             for (int k = 0; k < a[i][j].size(); k++)

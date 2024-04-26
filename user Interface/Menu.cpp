@@ -5,7 +5,7 @@
 #include "Menu.h"
 
 std::mt19937 rn;
-const int sz = 40, kolOfLetters = 20;
+const int sz = 40, kolOfLetters = 40;
 const int ERROR_TIMER = 100000;
 
 void toLower(std::string &s)
@@ -337,7 +337,7 @@ void train(Network &n)
             pos++;
         pos++;
 
-        std::string word = train.substr(pos, 50);
+        std::string word = train.substr(pos, 100);
 
 //        if (trainf.eof())
 //        {

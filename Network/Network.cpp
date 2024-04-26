@@ -339,6 +339,21 @@ void Network::fit(std::vector<float> &start)
     a[0] = start;
 }
 
+void Network::printW()
+{
+    print(weights);
+}
+
+void Network::printA()
+{
+    print(a);
+}
+
+void Network::printB()
+{
+    print(b);
+}
+
 int Network::predict(std::vector<float> &start)
 {
     srand(time(nullptr));
@@ -356,7 +371,7 @@ int Network::predict(std::vector<float> &start)
     std::reverse(v.begin(), v.end());
 
     float sum = 0;
-    for (int i = 0; i < std::min((int)v.size(), 3); i++)
+    for (int i = 0; i < std::min((int)v.size(), 5); i++)
     {
         sum += v[i].first;
     }
@@ -378,21 +393,6 @@ int Network::predict(std::vector<float> &start)
     }
 
     return mx;
-}
-
-void Network::printW()
-{
-    print(weights);
-}
-
-void Network::printA()
-{
-    print(a);
-}
-
-void Network::printB()
-{
-    print(b);
 }
 
 float Network::train(std::vector<float> &start, std::vector<float> &y)
