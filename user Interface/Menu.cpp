@@ -5,8 +5,8 @@
 #include "Menu.h"
 
 std::mt19937 rn;
-const int sz = 40, kolOfLetters = 40;
-const int ERROR_TIMER = 100000;
+const int sz = 40, kolOfLetters = 20;
+const int ERROR_TIMER = 1000000;
 
 void toLower(std::string &s)
 {
@@ -314,7 +314,7 @@ void train(Network &n)
 
     std::string cur;
 
-    std::cout << "\nVvodi kolichestvo testov padla: ";
+    std::cout << "\nVvodi kolichestvo testov: ";
 
 
 
@@ -337,7 +337,7 @@ void train(Network &n)
             pos++;
         pos++;
 
-        std::string word = train.substr(pos, 100);
+        std::string word = train.substr(pos, 50);
 
 //        if (trainf.eof())
 //        {
@@ -588,7 +588,7 @@ void fastSave(Network &n)
 
 void save(Network &n)
 {
-    std::cout << "Vvedi nazvanie fayla urod: ";
+    std::cout << "Vvedi nazvanie fayla: ";
     std::string s;
     std::cin >> s;
 

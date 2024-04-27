@@ -85,8 +85,6 @@ int main()
     std::ofstream fout("../src/data/text.txt");
     fout << " ";
 
-    std::setlocale(LC_ALL, "ru_RU.UTF-8");
-
     Network n;
 
     while (true)

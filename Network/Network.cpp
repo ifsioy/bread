@@ -371,7 +371,7 @@ int Network::predict(std::vector<float> &start)
     std::reverse(v.begin(), v.end());
 
     float sum = 0;
-    for (int i = 0; i < std::min((int)v.size(), 5); i++)
+    for (int i = 0; i < std::min((int)v.size(), 3); i++)
     {
         sum += v[i].first;
     }
